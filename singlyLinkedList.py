@@ -3,12 +3,11 @@
     My First Singly Linked List
 
     This program is the basic singly linked list data structure.
-    Throughout this program is a heavily annotated singly linked
-    list for the purpose of further understanding.
+    This program contains a singly linked list that has been heavily
+    annotated for studying purposes.
 
     Before attempting to understand linked lists, it may help to
-    first learn about Object Oriented Programming (OOP) to learn
-    about classes and what not.
+    first learn about Object Oriented Programming (OOP).
 
     This code comes from leetcode (This may require subscription):
 
