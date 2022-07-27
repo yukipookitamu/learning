@@ -36,7 +36,7 @@ class MyLinkedList:
 
         '''
         self.size = 0
-        self.head = ListNode(0)
+        self.head = ListNode(0) # Noting that the size is still zero, this node technically doesn't exist
 
     def get(self, index: int) -> int:
         '''
