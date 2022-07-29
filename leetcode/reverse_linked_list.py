@@ -60,7 +60,12 @@ class Solution:
 
         return prev
 
+
+
     def recursive(self, head):
+        '''
+            TODO: insert recursive approach explanation
+        '''
         if (not head) or (not head.next):
             return head
 
