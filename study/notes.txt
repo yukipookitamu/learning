@@ -114,3 +114,33 @@
   can take a certain amount of time.
 
 1.4 Frequency Count Level
+
+(1.5.1-1.5.2 Will be added later)
+
+1.5.3 Time Complexity of if and while
+
+  i = 0                                                    1
+  while (i < n)                                          n+1
+
+    statement;                                             n
+    i++                                                    n
+                                                           _
+                                               f(n) = 3n + 2
+                                                        O(n)
+
+1.6 Types of Time Functions
+
+  O(1): constant
+  - No matter the number in the time function, it will always simplify
+    to a constant O(1)
+
+  O(log n): logarithmic
+
+  O(n): linear
+  - No matter the number before n, we only care about the degree
+
+  O(n^2): quadratic
+
+  O(n^3): cubic
+
+  O(2^n): exponential
