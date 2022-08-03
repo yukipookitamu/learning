@@ -41,4 +41,10 @@ class Solution:
         return False
 
     def oneLiner(self, s: str, t: str) -> bool:
+        '''
+
+            Sort the strings, if they come out identical return True, otherwise
+            return False
+
+        '''
         return True if sorted(s) == sorted(t) else False
