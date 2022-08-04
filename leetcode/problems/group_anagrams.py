@@ -74,5 +74,5 @@ class Solution:
             # If the string has a count similar to that of one of the keys,
             # append it to the respective list
             ans[tuple(count)].append(s)
-        
+
         return ans.values()
