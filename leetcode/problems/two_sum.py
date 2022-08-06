@@ -28,6 +28,12 @@ class Solution:
             for j in range(i+1,len(nums)):
                 if nums[i] + nums[j] == target:
                     return [i,j]
+        '''
+
+            This solution has a time complexity O(n^2) and a space complexity
+            O(1)
+
+        '''
 
     def twoPass(self, nums: List[int], target: int) -> List[int]:
         '''
@@ -52,6 +58,14 @@ class Solution:
             if complement in hashmap and hashmap[complement] != i:
                 return [i, hashmap[complement]]
 
+        '''
+
+            This solution passes twice, giving us a time complexity of O(2n)
+            which simplifies to O(n). The space complexity is slightly worse
+            than the first solution with O(n).
+
+        '''
+
     def onePass(self, nums: List[int], target: int) -> List[int]:
         '''
 
@@ -72,3 +86,10 @@ class Solution:
             if complement in hashmap:
                 return [i, hashmap[complement]]
             hashmap[nums[i]] = i
+
+        '''
+
+            Similar to the two pass solution, the time complexity is O(n) and
+            the space complexity is O(n). This is the optimal solution.
+
+        '''
