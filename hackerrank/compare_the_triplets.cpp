@@ -15,6 +15,12 @@ vector<string> split(const string &);
  *  2. INTEGER_ARRAY b
  */
 
+// What I learned: vector<int> has more funcitonality
+// than a typical C array. A quick example is being able
+// to copy a vector into another vector without needing
+// to iterate through every element to copy like you would
+// in a typical C array.
+
 vector<int> compareTriplets(vector<int> a, vector<int> b)
 {
     int aScore = 0;
