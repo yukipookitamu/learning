@@ -6,8 +6,10 @@ public:
     bool isPalindrome(string s)
     {
         // convert string to back to lower case
-        std::for_each(s.begin(), s.end(), [](char &c)
-                      { c = ::tolower(c); });
+        for (int i = 0; i < s.size(); ++i)
+        {
+            s[i] = tolower(s[i]);
+        }
         int left = 0;
         int right = s.size() - 1;
         while (left < right)
