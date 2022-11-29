@@ -7,7 +7,7 @@ using namespace std;
 class Sorting
 {
 public:
-    void bubbleSort(vector<int> nums)
+    vector<int> bubbleSort(vector<int> nums)
     {
         for (int i = 0; i < nums.size(); i++)
         {
@@ -19,6 +19,7 @@ public:
                 }
             }
         }
+        return nums;
     }
 };
 
@@ -33,12 +34,13 @@ int main()
     }
     cout << endl;
 
-    sort.bubbleSort(numbers);
+    numbers = sort.bubbleSort(numbers);
 
     for (int x : numbers)
     {
         cout << x << " ";
     }
+    cout << endl;
 
     return 0;
 }
